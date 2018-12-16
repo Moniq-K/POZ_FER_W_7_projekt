@@ -53,6 +53,7 @@ const ClothesForGazeta = () => {
 }
 const ClothesList = ({shape}) => {
     return <div className={styles.clothesContainer}>
+        
         {shape === "gruszka" && <ClothesForGruszka></ClothesForGruszka>}
         {shape === "jablko" && <ClothesForJablko></ClothesForJablko>}
         {shape === "klepsydra" && <ClothesForKlepsydra></ClothesForKlepsydra>}

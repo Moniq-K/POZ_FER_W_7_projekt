@@ -76,7 +76,6 @@ html {
   position: absolute;
   left: 0;
 
-
 }
 
 .form {
@@ -153,7 +152,7 @@ html {
 }
 
 .divList {
- padding-left:2rem;
+  padding-left: 2rem;
 }
 
 .descriptionsTextH2 {
@@ -164,8 +163,8 @@ html {
   font-size: 1.5rem;
   font-family: Roboto, sans-serif;
   padding-bottom: 15px;
-  padding-left:1rem;
-  margin-top:2rem;
+  padding-left: 1rem;
+  margin-top: 2rem;
 }
 
 .textBold {
@@ -317,7 +316,7 @@ html {
 .container {
   position: relative;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .containerImg {
@@ -388,7 +387,8 @@ justify-content: space-between;
     justify-content: space-between;
 
     img {
-height: 500px;
+      height: 500px;
+      margin-bottom: 10px;
 
     }
   }

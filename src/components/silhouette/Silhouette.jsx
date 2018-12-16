@@ -6,7 +6,6 @@ export default class Silhouette extends React.Component {
     render() {
         return <div className={styles.formContainer}>
             <a style={{visibility: "hidden", width: 0, height: 0}} name="silhouette"/>
-
             <div className={styles.container}>
                 <div className={styles.containerImg}>
                     <img src={image} className={styles.image} height="500"/>
