@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +15,26 @@
 
 .formContainer {
   width: 1500px;
-  padding-right: 15px;
+  padding-rig4ht: 15px;
   padding-left: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   line-height: 2.4rem;
+
+}
+
+.divsContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .textContainer {
   width: 1400px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
   line-height: 2rem;
@@ -31,10 +45,44 @@
 
 }
 
+.divs {
+  width: 32%;
+  height: 380px;
+  background-color: #e5e9f4;
+  display: flex;
+  margin-bottom: 1rem;
+  div {
+    margin: 1.5rem;
+    font-size: 1.3rem;
+    font-family: Roboto, sans-serif;
+    line-height: 2rem;
+  }
+}
+
+.divsNo {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  line-height: 4rem;
+  position: relative;
+  padding-left: 15px;
+}
+
+.divsNo:before {
+  content: '';
+  width: 1px;
+  height: 80px;
+  border-left: 1px solid black;
+  position: absolute;
+  left: 0;
+
+
+}
+
 .form {
   background-color: #e5e9f4;
   display: flex;
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
 }
 
 .form1 {
@@ -63,42 +111,80 @@
 .formTextH2 {
   color: #464ab5;
   text-transform: uppercase;
-  letter-spacing: .18em;
+  letter-spacing: .14em;
   font-weight: 700;
   font-size: 1.5rem;
   font-family: Roboto, sans-serif;
   padding-bottom: 15px;
 }
+
 .formTextH3 {
-  font-size: 2.5em;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-size: 2.7em;
   color: #464ab5;
-  font-family: 'Leckerli One', cursive;
+  font-family: 'Racing Sans One', cursive;
   margin-right: 2rem;
 }
+
 .formTextH4 {
   font-size: 2.7rem;
   font-weight: 400;
   color: #0b0b0b;
   font-family: Roboto, sans-serif;
-  margin-left:1rem;
+  margin-left: 1rem;
 }
 
-.textBold{
+.divTextH5 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: #0b0b0b;
+  font-family: Roboto, sans-serif;
+  line-height: 2rem;
+}
+
+.divTextH6 {
+  color: #464ab5;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+  line-height: 4rem;
+
+}
+
+.divList {
+ padding-left:2rem;
+}
+
+.descriptionsTextH2 {
+  color: #464ab5;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 15px;
+  padding-left:1rem;
+  margin-top:2rem;
+}
+
+.textBold {
   font-size: 1.4rem;
   font-weight: 500;
   color: #464ab5;
   font-family: Roboto, sans-serif;
+  line-height: 1.6rem;
 }
 
-.textNormal{
+.textNormal {
   font-size: 1.4rem;
   font-weight: 400;
+  margin-bottom: .5rem;
   font-family: Roboto, sans-serif;
+  line-height: 1.6rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
 }
-
-
 
 .warnings {
   font-weight: 600;
@@ -109,9 +195,9 @@
 }
 
 .labelName {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  margin-bottom: .3rem;
+  margin-bottom: .5rem;
   font-family: Roboto, sans-serif;
   line-height: 2rem;
 }
@@ -119,19 +205,25 @@
 .labelNameBmi {
   font-size: 1.3rem;
   font-weight: 500;
-  margin-top:1.4rem;
   margin-bottom: .3rem;
   font-family: Roboto, sans-serif;
   line-height: 2rem;
 }
 
-.input {
-  font-size: 1.1rem;
+.textBmi {
+  font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: .15rem;
+  margin-bottom: .5rem;
+  font-family: Roboto, sans-serif;
+}
+
+.input {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: .5rem;
   font-family: Roboto, sans-serif;
   width: 20rem;
-  height: 2.5rem;
+  height: 2.8rem;
   background-color: #fff;
   display: block;
   border-radius: 1rem;
@@ -144,10 +236,10 @@
 .bmi {
   font-size: 1.1rem;
   font-weight: 400;
-  margin-bottom: .15rem;
+  margin-bottom: .015rem;
   font-family: Roboto, sans-serif;
   width: 20rem;
-  height: 2.5rem;
+  height: 2.8rem;
   background-color: #fff;
   display: block;
   border-radius: 1rem;
@@ -162,7 +254,7 @@
   font-weight: 400;
   font-family: Roboto, sans-serif;
   width: 20rem;
-  height: 2.6rem;
+  height: 2.8rem;
   background-color: #464ab5;
   display: block;
   border-radius: 1rem;
@@ -212,7 +304,7 @@
 .image1 {
   padding: 0;
   margin: 0;
-  height: 400px;
+  height: 420px;
 }
 
 .image2 {
@@ -224,7 +316,14 @@
 
 .container {
   position: relative;
+  display: flex;
+justify-content: space-between;
+}
 
+.containerImg {
+  position: relative;
+  display: flex;
+  width: 66%;
 }
 
 .border {
@@ -245,29 +344,52 @@
   }
 
   &.klepsydra {
-    left: -595px;
+    left: -597px;
   }
 
   &.gazeta {
-    left: -410px;
+    left: -411px;
   }
 
   &.rozek {
-    left: -220px;
+    left: -222px;
   }
-
   box-sizing: content-box;
-}
-
-.withFloat {
-  float: left;
 }
 
 .descriptions {
   padding-left: 15px;
-  width: 33%;
+  width: 32%;
   font-size: 1.2rem;
   font-weight: 400;
   font-family: Roboto, sans-serif;
   background-color: #e5e9f4;
+}
+
+.clothesContainer {
+  //width: 1500px;
+  //
+  //margin-top: 20px;
+  //margin-right: auto;
+  //margin-left: auto;
+  //line-height: 2.4rem;
+  //background-color: #0d3349;
+  //margin-bottom:10px;
+  width: 1500px;
+  padding-rig4ht: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 2.4rem;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+height: 500px;
+
+    }
+  }
 }

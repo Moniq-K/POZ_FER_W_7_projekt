@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../../components/app/App.scss";
 
 var context = require.context('../../components/clothesList/img');
 var files={};
@@ -51,12 +52,12 @@ const ClothesForGazeta = () => {
     </div>
 }
 const ClothesList = ({shape}) => {
-    return <div>
+    return <div className={styles.clothesContainer}>
         {shape === "gruszka" && <ClothesForGruszka></ClothesForGruszka>}
         {shape === "jablko" && <ClothesForJablko></ClothesForJablko>}
-        {shape === "jablko" && <ClothesForKlepsydra></ClothesForKlepsydra>}
-        {shape === "jablko" && <ClothesForRozek></ClothesForRozek>}
-        {shape === "jablko" && <ClothesForGazeta></ClothesForGazeta>}
+        {shape === "klepsydra" && <ClothesForKlepsydra></ClothesForKlepsydra>}
+        {shape === "rozek" && <ClothesForRozek></ClothesForRozek>}
+        {shape === "gazeta" && <ClothesForGazeta></ClothesForGazeta>}
     </div>
 }
 
